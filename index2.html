@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.hesab{
+    border: 1px black solid;
+text-align: center;
+padding: 50px;
+width: 40%;
+}
+input{
+    width: 100%;
+    margin: 10px;
+}
+
+#result {
+    font-size: 2rem;
+    color: brown;
+}
+button {
+    background-color: brown;
+    padding: 5px 15px;
+    color: aliceblue;
+}
+    </style>
+</head>
+<body>
+   <div class="hesab">
+    <h3>Oturmek istediyiniz mesaj</h3>
+    <input type="text" id="demo">
+    <button onclick="hesabla()">Click</button>
+    <p>Son mesaj çatdırıldı...</p>
+    <p id="result"></p>
+
+   </div>
+  <script>
+    const demo=document.getElementById("demo")
+    const result=document.getElementById("result")
+    function hesabla(){
+        result.innerHTML=demo.value
+
+    }
+  </script>
+</body>
+</html>
